@@ -79,10 +79,8 @@ class BreadcrumbItemProcessor
         // Process the label
         if ($item->getLabel() && $item->getLabel()[0] === '$') {
             $processedLabel = $this->parseValue($item->getLabel(), $variables);
-        } elseif (!$item->getLabel() || $item->getTranslationDomain() === false) {
-            $processedLabel = $item->getLabel();
         } else {
-            $processedLabel = $this->translator->trans($item->getLabel(), [], $item->getTranslationDomain());
+            $processedLabel = $item->getLabel();
         }
 
         // Process the route

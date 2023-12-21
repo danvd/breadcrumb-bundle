@@ -1,5 +1,5 @@
 {
-    "name": "slope-it/breadcrumb-bundle",
+    "name": "danvd/breadcrumb-bundle",
     "description": "A bundle for generating dynamic breadcrumbs in Symfony applications",
     "type": "symfony-bundle",
     "license": "MIT",
